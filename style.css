@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #030303;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: radial-gradient(circle at center, rgba(119, 31, 237, 0.15) 0%, #030303 60%);
+}
+
+.navbar {
+    width: 100%;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgba(3, 3, 3, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo { font-size: 24px; font-weight: 900; }
+.logo span { color: #a855f7; text-shadow: 0 0 15px rgba(168, 85, 247, 0.5); }
+
+nav { display: flex; gap: 30px; align-items: center; }
+.nav-link { text-decoration: none; color: #999; font-size: 14px; transition: 0.3s; }
+.nav-link:hover { color: #fff; }
+
+.nav-btn-discord {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #771fed;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title { font-size: 64px; font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
+.purple-glow { color: #a855f7; text-shadow: 0 0 25px rgba(168, 85, 247, 0.6); }
+
+.hero-subtitle { color: #b5b5b5; margin-bottom: 40px; }
+
+.btn-primary {
+    text-decoration: none; background: #a855f7; color: #fff;
+    padding: 16px 35px; border-radius: 8px; font-weight: 700;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.4); display: inline-block;
+}
+
+.btn-secondary {
+    text-decoration: none; background: rgba(255, 255, 255, 0.05); color: #999;
+    padding: 16px 35px; border-radius: 8px; font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.1); display: inline-block; margin-left: 15px;
+}
+
+.status-section {
+    padding: 100px 0;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.section-title { font-size: 32px; margin-bottom: 40px; }
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.status-card {
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.status-card:hover { border-color: #a855f7; transform: translateY(-5px); }
+
+.status-tag {
+    color: #00ff66;
+    border: 1px solid #00ff66;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
